@@ -3,7 +3,7 @@ layout: page
 title: KNEED
 description: Improving entity disambiguation using knowledge graph embeddings.
 img:
-importance: 4
+importance: 3
 category: work
 ---
 When using ontologies for automated information retrieval and extraction, it is crucial that the entities are linked properly. Unfortunately, large ontologies have many ambiguous labels (e.g. river "bank" vs "bank" (institution)). This ambiguity leads to poor downstream task performance. 
