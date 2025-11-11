@@ -84,8 +84,7 @@
       "endDate": "2018-08",
       "summary": "Responsible for a cabin of 8 13-year-old girls for the 8-week season. Planned, supervised, and executed daily activities, meals, and special events. Selected to lead a week-long advanced water ski skills camp. Lead week long canoeing and hiking trips in the back country. Certified in CPR, life guarding, and ski instruction.",
       "highlights": []
-    }
-    ,
+    },
     {
       "name": "Thayer School of Engineering",
       "position": "IT Help Desk Technician",
@@ -106,7 +105,18 @@
       "startDate": "2023-08",
       "endDate": "2026-05",
       "score": "10",
-      "courses": ["Corpus Linguistics", "ML for NLP", "Information Theory", "Signal Processing", "Semantics I", "Empirical Methods in NLP", "Syntax I", "Ethics in CL and AI", "Deep Learning for Speech Processing", "Computational Linguistics Research Methods"]
+      "courses": [
+        "Corpus Linguistics",
+        "ML for NLP",
+        "Information Theory",
+        "Signal Processing",
+        "Semantics I",
+        "Empirical Methods in NLP",
+        "Syntax I",
+        "Ethics in CL and AI",
+        "Deep Learning for Speech Processing",
+        "Computational Linguistics Research Methods"
+      ]
     },
     {
       "institution": "Dartmouth College",
@@ -116,7 +126,24 @@
       "studyType": "BA",
       "startDate": "2017-09",
       "endDate": "2021-06",
-      "courses": ["Object-Oriented Programming", "Machine Learning", "Algorithms", "Discrete Mathematics", "Computational Linguistics", "Digital Electronics", "Databases", "Watson", "Human-Computer Interaction", "Senior Design and Implementation Project", "Introduction to Linguistics", "Sociolinguistics", "Phonology", "Psycholinguistics", "Semantics", "Language Gender & Sexuality"]
+      "courses": [
+        "Object-Oriented Programming",
+        "Machine Learning",
+        "Algorithms",
+        "Discrete Mathematics",
+        "Computational Linguistics",
+        "Digital Electronics",
+        "Databases",
+        "Watson",
+        "Human-Computer Interaction",
+        "Senior Design and Implementation Project",
+        "Introduction to Linguistics",
+        "Sociolinguistics",
+        "Phonology",
+        "Psycholinguistics",
+        "Semantics",
+        "Language Gender & Sexuality"
+      ]
     }
   ],
   "awards": [
@@ -133,23 +160,21 @@
       "awarder": "Dartmouth College"
     }
   ],
-  "certificates": [
-   
-  ],
-  
+  "certificates": [],
+
   "skills": [
     {
       "name": "Python",
       "icon": ""
     },
-     {
+    {
       "name": "NLP",
       "icon": ""
-    }, 
+    },
     {
       "name": "Speech Technology",
       "icon": ""
-    }, 
+    },
     {
       "name": "Machine Learning",
       "icon": ""
@@ -208,21 +233,23 @@
       "name": "Compuatational Linguistics",
       "icon": "",
       "keywords": [
-        "Low resource languages", "Machine translation", "Domain adapation", "Responsible AI", "Information retrieval", "Information extraction", "Adversarial AI", "Entity disabiguation", "Sociolinguistics"
+        "Low resource languages",
+        "Machine translation",
+        "Domain adapation",
+        "Responsible AI",
+        "Information retrieval",
+        "Information extraction",
+        "Adversarial AI",
+        "Entity disabiguation",
+        "Sociolinguistics"
       ]
     },
     {
       "name": "Extracurricular",
       "icon": "",
-      "keywords": [
-        "Hiking", "Biking", "Climbing", "Music", "Women's Soccer (Go Spirit!)"
-      ]
+      "keywords": ["Hiking", "Biking", "Climbing", "Music", "Women's Soccer (Go Spirit!)"]
     }
   ],
-  "references": [
- 
-  ],
-  "projects": [
-  
-  ]
+  "references": [],
+  "projects": []
 }

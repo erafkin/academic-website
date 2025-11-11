@@ -16,5 +16,3 @@ Multilingual transformers were trained on each target language and then the base
 This project is in progress.
 
 Code for this project can be found [here](https://github.com/erafkin/xling_task_transfer/).
-
-
