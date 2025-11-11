@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Forget-Me-Not
-description: Using Task Vectors to prevent catastrophic forgetting
+description: Using task vectors to prevent catastrophic forgetting
 # img: assets/img/7.jpg
 # redirect: https://unsplash.com
 importance: 1

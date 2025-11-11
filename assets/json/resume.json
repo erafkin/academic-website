@@ -106,7 +106,7 @@
       "startDate": "2023-08",
       "endDate": "2026-05",
       "score": "10",
-      "courses": ["Corpus Linguistics", "ML for NLP", "Signal Processing", "Semantics I", "Empirical Methods in NLP", "Syntax I", "Ethics in CL and AI", "Deep Learning for Speech Processing", "Computational Linguistics Research Methods"]
+      "courses": ["Corpus Linguistics", "ML for NLP", "Information Theory", "Signal Processing", "Semantics I", "Empirical Methods in NLP", "Syntax I", "Ethics in CL and AI", "Deep Learning for Speech Processing", "Computational Linguistics Research Methods"]
     },
     {
       "institution": "Dartmouth College",
@@ -159,11 +159,11 @@
       "icon": ""
     },
     {
-      "name": "Javascript",
+      "name": "JavaScript",
       "icon": ""
     },
     {
-      "name": "Typescript",
+      "name": "TypeScript",
       "icon": ""
     },
     {
@@ -200,11 +200,6 @@
     {
       "language": "Spanish",
       "fluency": "Conversational",
-      "icon": ""
-    },
-    {
-      "language": "Yiddish",
-      "level": "Beginner",
       "icon": ""
     }
   ],

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dandelion
-description: Detecting and Erasing Bias from Multimodal Foundation Models
+description: Detecting and erasing bias from multimodal foundation models
 # img: assets/img/7.jpg
 # redirect: https://unsplash.com
 importance: 2
