@@ -24,6 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a data scientist and software engineer at the Johns Hopkins University Applied Physics Laboratory and a Master's student in Computational Linguistics at Georgetown University. I am an NLP researcher primarily interested in low resource languages, domain adaptation, responsible AI, information extraction, information retrieval.
+I am a data scientist and software engineer at the Johns Hopkins University Applied Physics Laboratory and a Master's student in Computational Linguistics at Georgetown University. I am an NLP researcher primarily interested in low resource languages, domain adaptation, responsible AI, information extraction, and information retrieval.
 
 In my free time I love to to be in the outdoors hiking, biking, or climbing.
