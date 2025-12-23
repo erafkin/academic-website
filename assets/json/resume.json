@@ -28,7 +28,7 @@
       "url": "https://www.jhuapl.edu/",
       "startDate": "2021-08",
       "endDate": "present",
-      "summary": "Researcher and engineer focused on NLP and knowledge representation. In this role I've proposed and led research and development efforts leading small teams (2-6 people) as well as communicated research findings to sponsors and internal stakeholders. Research areas include: responsible AI, LLM domain adaptation, information retrieval, relevance ranking, information extraction, topic summarization, adversarial AI, entity disambiguation, and multimodal anomaly detection.",
+      "summary": "Researcher and engineer focused on NLP and knowledge representation. In this role I've proposed and led research and development efforts of small teams (2-6 people) as well as communicated research findings to sponsors and internal stakeholders. Research areas include: responsible AI, LLM domain adaptation, information retrieval, relevance ranking, information extraction, topic summarization, adversarial AI, entity disambiguation, and multimodal anomaly detection.",
       "highlights": []
     },
     {
@@ -37,7 +37,7 @@
       "url": "https://dali.dartmouth.edu/",
       "startDate": "2019-01",
       "endDate": "2021-07",
-      "summary": "Developed full stack websites for start ups and researchers. I have experience with building frontends with modern frameworks such as React and React Native as well as backends with Node.js/Express.js. From September 2020 to June 2021 I was the Women in Science Program lead for DALI and was on the core executive board. ",
+      "summary": "Developed full stack websites for start ups and researchers. I built frontends with frameworks such as React and React Native as well as backends with Node.js/Express.js. From September 2020 to June 2021 I was the Women in Science Program lead for DALI and was on the core executive board. ",
       "highlights": []
     },
     {
@@ -226,6 +226,11 @@
       "language": "Spanish",
       "fluency": "Conversational",
       "icon": ""
+    },
+    {
+      "language": "American Sign Language",
+      "fluency": "Beginner",
+      "icon": ""
     }
   ],
   "interests": [
@@ -234,6 +239,7 @@
       "icon": "",
       "keywords": [
         "Low resource languages",
+        "Cross-Lingual Task Transfer",
         "Machine translation",
         "Domain adapation",
         "Responsible AI",
