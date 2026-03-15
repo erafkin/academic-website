@@ -65,8 +65,8 @@ ninja.data = [{
           description: "Exploring information theory&#39;s implications on compression on internet abbreviations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/information_theory.html";
-            },},{id: "projects-mozilla-low-resource-asr-challenge",
-          title: 'Mozilla Low-Resource ASR Challenge',
+            },},{id: "projects-task-arithmetic-with-support-languages-for-low-resource-asr",
+          title: 'Task Arithmetic with Support Languages for Low-Resource ASR',
           description: "Using high resource genetically related families to bolster ASR of low resource languages.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/mozilla.html";
