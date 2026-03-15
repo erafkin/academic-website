@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mozilla Low-Resource ASR Challenge
+title: Task Arithmetic with Support Languages for Low-Resource ASR
 description: Using high resource genetically related families to bolster ASR of low resource languages.
 # img: assets/img/3.jpg
 importance: 2
