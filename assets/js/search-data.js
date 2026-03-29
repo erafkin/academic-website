@@ -70,8 +70,8 @@ ninja.data = [{
           description: "Using high resource genetically related families to bolster ASR of low resource languages.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/mozilla.html";
-            },},{id: "projects-cross-lingual-task-transfer-using-task-vectors",
-          title: 'Cross-Lingual Task Transfer Using Task Vectors',
+            },},{id: "projects-investigating-the-cross-lingual-transferability-of-nlp-tasks",
+          title: 'Investigating the Cross-Lingual Transferability of NLP Tasks',
           description: "Master&#39;s Research Paper",
           section: "Projects",handler: () => {
               window.location.href = "/projects/xling_task_transfer.html";
