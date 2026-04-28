@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Forget-Me-Not
-description: Using task vectors to prevent catastrophic forgetting
+description: Using task vectors and LoRA combinations to prevent catastrophic forgetting
 # img: assets/img/7.jpg
 # redirect: https://unsplash.com
-importance: 1
+importance: 2
 category: work
 ---
 
