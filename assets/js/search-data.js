@@ -37,7 +37,7 @@ ninja.data = [{
               window.location.href = "/projects/Dandelion.html";
             },},{id: "projects-forget-me-not",
           title: 'Forget-Me-Not',
-          description: "Using task vectors to prevent catastrophic forgetting",
+          description: "Using task vectors and LoRA combinations to prevent catastrophic forgetting",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Forget-me-not.html";
             },},{id: "projects-gist",
