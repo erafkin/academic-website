@@ -55,7 +55,7 @@
       "url": "https://alarm.com/",
       "startDate": "2020-06",
       "endDate": "2020-08",
-      "summary": "Created scheduled reports to inform property managers about low battery devices throughout the units they manage. Enhanced an existing report that informed property managers of alarms and issues throughout the units the managed.",
+      "summary": "Created scheduled reports to inform property managers about low battery devices throughout the units they manage. Enhanced an existing report that informed property managers of alarms and issues throughout the units.",
       "highlights": []
     },
     {
@@ -115,7 +115,8 @@
         "Syntax I",
         "Ethics in CL and AI",
         "Deep Learning for Speech Processing",
-        "Computational Linguistics Research Methods"
+        "Computational Linguistics Research Methods",
+        "ASL 1"
       ]
     },
     {
@@ -223,7 +224,7 @@
   "languages": [
     {
       "language": "English",
-      "fluency": "Fluent",
+      "fluency": "Native",
       "icon": ""
     },
     {
@@ -243,7 +244,7 @@
       "icon": "",
       "keywords": [
         "Low resource languages",
-        "Cross-Lingual Task Transfer",
+        "Cross-Lingual task transfer",
         "Machine translation",
         "Domain adapation",
         "Responsible AI",
