@@ -5,7 +5,7 @@ description: Using high resource genetically related families to bolster ASR of 
 # img: assets/img/3.jpg
 importance: 2
 category: school
-related_publications: false
+related_publications: true
 github: https://github.com/ddegenaro/mozilla-asr-challenge/
 ---
 
