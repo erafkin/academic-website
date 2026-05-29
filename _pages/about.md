@@ -24,6 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an NLP researcher at the Johns Hopkins University Applied Physics Laboratory. I recently graduated with my Master's in Computational Linguistics at Georgetown University. I am primarily interested in domain adaptation, responsible AI, low resource languages,  information extraction, and information retrieval.
+I am an NLP researcher at the Johns Hopkins University Applied Physics Laboratory. I recently graduated with my Master's in Computational Linguistics at Georgetown University. I am primarily interested in domain adaptation, responsible AI, low resource languages, information extraction, and information retrieval.
 
 In my free time I love to to be in the outdoors hiking, biking, or climbing.
