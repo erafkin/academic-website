@@ -50,6 +50,11 @@ ninja.data = [{
           description: "Improving entity disambiguation using knowledge graph embeddings.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/KNEED.html";
+            },},{id: "projects-rose",
+          title: 'ROSE',
+          description: "Relating Ontologically Similar Entities",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ROSE.html";
             },},{id: "projects-trict",
           title: 'TRICT',
           description: "Injecting attacks into coder LLMs.",
