@@ -28,8 +28,8 @@
       "url": "https://www.jhuapl.edu/",
       "startDate": "2021-08",
       "endDate": "present",
-      "summary": "Researcher and engineer focused on NLP and knowledge representation. In this role I've proposed and led research and development efforts of small teams (2-6 people) as well as communicated research findings to sponsors and internal stakeholders. Research areas include: responsible AI, LLM domain adaptation, information retrieval, relevance ranking, information extraction, topic summarization, adversarial AI, entity disambiguation, and multimodal anomaly detection.",
-      "highlights": []
+      "summary": " NLP subject matter expert and advisor for U.S. Government contractor. Create and deploy tools that inject domain knowledge into language models and extract critical information from text using state of the art NLP methods and domain ontologies. Work on every part of the applied AI pipeline: curate data and finetune LLMs to align with critical low-resource missions, create robust information retrieval and extraction systems, steer models during generation, construct thorough output validation and safety mechanisms. Awarded 8 grants to pursue research in AI transparency, concept erasure, summarization, entity disambiguation, LLM domain adaptation, AI red teaming, and multi-modal anomaly detection.",
+      "highlights": ["Lead research teams of 3-6 people", "Present results to internal and external stakeholders", "Act as a trusted government advisor", "Build software that can scale to process publicly available data streams of millions of documents per day"]
     },
     {
       "name": "Dartmouth Applied Learning and Innovation Laboratory",
