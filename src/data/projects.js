@@ -4,7 +4,6 @@ export const projects = [
     category: "work",
     blurb:
       "Detecting and erasing bias from multimodal foundation models. Measures bias along a user-selected characteristic, locates it in the model, and attempts to erase that concept via activation probing, steering, and weight-space methods.",
-    links: [{ label: "CaTE report", href: "https://arxiv.org/pdf/2508.14741" }],
   },
   {
     title: "Forget-Me-Not",
@@ -16,7 +15,7 @@ export const projects = [
     title: "ROSE",
     category: "work",
     blurb:
-      "Relating Ontologically Similar Entities: using a knowledge graph and ontology to recognize when an LLM refers to the same entity with different language, with a medical treatment use case.",
+      "Relating Ontologically Similar Entities: using ontologies to recognize when an LLM refers to the same entity with different language, with a medical treatment use case.",
   },
   {
     title: "KNEED",
@@ -28,13 +27,13 @@ export const projects = [
     title: "GIST",
     category: "work",
     blurb:
-      "An experiment on improving single- and multi-document summarization. Compared abstractive and extractive methods; Edmundson heuristics worked best for single-document, SG-Sum for multi-document.",
+      "An experiment on improving single- and multi-document summarization. Compared abstractive and extractive methods; Edmundson heuristics worked best for single-document, SG-Sum for multi-document. (Pre LLM era)",
   },
   {
     title: "TRICT",
     category: "work",
     blurb:
-      "A simple experiment showing how easy it is to inject attack code into coding LLMs, demonstrating that generative AI has no real guard rails.",
+      "A simple red-teaming experiment showing how easy it is to inject attack code into coder Agents, demonstrating that generative AI has no real guard rails.",
   },
   {
     title: "Investigating the Cross-Lingual Transferability of NLP Tasks",
@@ -49,7 +48,7 @@ export const projects = [
     title: "Task Arithmetic with Support Languages for Low-Resource ASR",
     category: "school",
     blurb:
-      "Mozilla CommonVoice Spontaneous Speech ASR Challenge submission. Finetuned Whisper and trained adapters or task vectors on genetically similar higher-resource languages to bolster low-resource ASR.",
+      "Mozilla CommonVoice Spontaneous Speech ASR Challenge submission. Finetuned Whisper and trained adapters or task vectors on genetically similar higher-resource languages to bolster low-resource ASR. System description paper accepted into Workshop",
     links: [
       {
         label: "GitHub",
