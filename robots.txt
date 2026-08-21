@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: http://emmarafkin.com/sitemap.xml
