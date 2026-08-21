@@ -1,9 +1,0 @@
-github_users:
-
-repo_description_lines_max: 2
-
-github_repos:
-  - erafkin/xling_task_transfer
-  - erafkin/twitter_abbreviation_word_length
-  - erafkin/enlp_final_curriculum_learning
-  - ddegenaro/mozilla-asr-challenge
