@@ -3,6 +3,7 @@
   --text: #1c1c1c;
   --muted: #5c5c5c;
   --rule: #e2ddd6;
+  --tags: lightblue;
   --max: 42rem;
 }
 
@@ -58,8 +59,9 @@ header {
 
 .brand {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   letter-spacing: 0.02em;
+  font-weight: bold;
 }
 
 nav {
@@ -134,6 +136,12 @@ p {
   display: block;
   border-radius: 5px;
 }
+.popupImage {
+   width: 100%;
+  height: auto;
+  display: block;
+
+}
 
 .item-list {
   list-style: none;
@@ -168,4 +176,95 @@ p {
   .portrait {
     width: 8.5rem;
   }
+}
+.projectSelectionBox{
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+.sportSelectionBox{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.sportSelection{
+  font-weight: bold;
+  /* font-size: large; */
+  color: var(--muted);
+}
+.projectSelection{
+  font-weight: bold;
+  /* font-size: large; */
+  color: var(--muted);
+}
+.projectNote{
+  color: var(--muted);
+  font-size: smaller;
+  font-style: italic;
+}
+.tags{
+  background-color: var(--tags);
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+.tagBox{
+  display: flex;
+  font-size: smaller;
+}
+
+.standings {
+  width: 100%;
+  max-width: 700px;
+  border-collapse: collapse;
+  font: 15px/1.4 system-ui, sans-serif;
+  color: #222;
+}
+
+.tableTitle{
+  color: var(--muted);
+
+}
+.standings th,
+.standings td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.standings th:nth-child(2),
+.standings td:nth-child(2) {
+  text-align: left;
+}
+
+.standings th {
+  background: #f4f4f5;
+  color: #666;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.standings tr {
+  border-bottom: 1px solid #eee;
+}
+
+.standings tbody tr:hover {
+  background: #fafafa;
+}
+
+
+.map {
+  height: 500px;
+  width: 100%;
+  border-radius: 12px;
+  background-color: var(--bg);
+}
+.climbing {
+  width: 50%;
+  background-color: var(--bg);
+}
+.climbingVert {
+  width: 50%;
+  background-color: var(--bg);
 }

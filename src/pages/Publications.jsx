@@ -26,7 +26,7 @@ export default function Publications() {
                 {paper.links.map((link, index) => (
                   <span key={link.href}>
                     {index > 0 && " · "}
-                    <a href={link.href}>{link.label}</a>
+                    <a href={link.href} target="_blank" rel="noopener noreferrer">{link.label}</a>
                   </span>
                 ))}
               </p>

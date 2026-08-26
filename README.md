@@ -14,3 +14,5 @@ npm run dev
 Push to `main`. GitHub Actions builds the site and deploys `dist/` to the `gh-pages` branch.
 
 Content lives in `src/data/` (about copy, projects, publications). The CV PDF is `public/Rafkin_resume.pdf`.
+
+
