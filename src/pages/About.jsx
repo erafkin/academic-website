@@ -20,7 +20,7 @@ export default function About() {
 
           </p>
           <p>
-            In my free time I love to be in the <NavLink to="/outdoors">outdoors</NavLink>, listening to <NavLink to="/music">music</NavLink>, and rooting for my favorite <NavLink to="/sports">teams</NavLink>.
+            In my free time I love to be in the <NavLink to="/outdoors">outdoors</NavLink>, listening to <a href="https://open.spotify.com/user/erafkin?si=6a8e209ce35f4e81" target="_blank" rel="noopener noreferrer">music</a>, and cheering for my favorite <NavLink to="/sports">teams</NavLink>.
           </p>
         {/* {site.bio.map((paragraph) => (
           <p key={paragraph.slice(0, 24)}>{paragraph}</p>
