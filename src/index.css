@@ -38,6 +38,7 @@ a {
 
 a:hover {
   color: var(--muted);
+  cursor: pointer;
 }
 
 .shell {
