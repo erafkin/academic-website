@@ -82,7 +82,6 @@ export const projects = [
         label: "GitHub",
         href: "https://github.com/erafkin/twitter_abbreviation_word_length/",
       },
-      { label: "PDF", href: "/papers/Efficient_communication_in_internet_slang.pdf" },
     ],
   },
   {
@@ -95,8 +94,6 @@ export const projects = [
         label: "GitHub",
         href: "https://github.com/erafkin/enlp_final_curriculum_learning",
       },
-      { label: "PDF", href: "/papers/emnlp.pdf" },
-
     ],
     tags: ["curriculum learning", "fine-tuning"]
 
