@@ -193,10 +193,16 @@ p {
   /* font-size: large; */
   color: var(--muted);
 }
+.sportSelection:hover{
+    cursor: pointer;
+}
 .projectSelection{
   font-weight: bold;
   /* font-size: large; */
   color: var(--muted);
+}
+.projectSelection:hover{
+    cursor: pointer;
 }
 .projectNote{
   color: var(--muted);
