@@ -112,7 +112,7 @@ export default function Music() {
             <Bar dataKey="count" fill="#82ca9d" />
         </BarChart>
 
-        <h3>All data (2021-Present)</h3>
+        <h3>All data (2019-Present)</h3>
         <table className="standings">
             <thead>
                 <tr>
