@@ -183,6 +183,15 @@ p {
   width: 30%;
   justify-content: space-between;
 }
+.button{
+    font-weight: bold;
+  color: var(--muted);
+  text-decoration: underline;
+
+}
+.button:hover{
+    cursor: pointer;
+}
 .sportSelectionBox{
   display: flex;
   width: 50%;

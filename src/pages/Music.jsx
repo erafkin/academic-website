@@ -36,7 +36,7 @@ export default function Music() {
     const pageSize = 5;
 
     const start = page * pageSize;
-    const pageData = data.slice(start, start + pageSize);
+    const pageData = data.toReversed().slice(start, start + pageSize);
     const eventsOverTime = Object.entries(
         data.reduce((acc, row) => {
             const date = parseDate(row.c[2]?.v);
@@ -136,7 +136,7 @@ export default function Music() {
             <Bar dataKey="count" fill="#82ca9d" />
         </BarChart>
 
-        <h3>All data (2019-Present)</h3>
+        <h3>All data (Present-2019)</h3>
         <table className="standings">
             <thead>
                 <tr>
@@ -163,19 +163,21 @@ export default function Music() {
                 ))}
             </tbody>
         </table>
+        <div className="projectSelectionBox">
+        <div className="button" style= {page === 0 ? {color: "var(--bg)"}: null} onClick={() => setPage(p => p - 1)}>
+                Prev
+        </div>
 
-        <button disabled={page === 0} onClick={() => setPage(p => p - 1)}>
-        Prev
-        </button>
+                <span> Page {page + 1} </span>
 
-        <span> Page {page + 1} </span>
-
-        <button
-        disabled={start + pageSize >= data.length}
-        onClick={() => setPage(p => p + 1)}
-        >
-        Next
-        </button>
+                <div className="button"
+                style= {start + pageSize >= data.length ? {color: "var(--bg)"}: null}
+                onClick={() => setPage(p => p + 1)}
+                >
+                Next
+                </div>
+        </div>
+      
     </>
     );
 }
