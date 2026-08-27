@@ -164,7 +164,8 @@ export default function Music() {
             </tbody>
         </table>
         <div className="projectSelectionBox">
-        <div className="button" style= {page === 0 ? {color: "var(--bg)"}: null} onClick={() => setPage(p => p - 1)}>
+    
+        <div className="button" style= {page === 0 ? {color: "var(--bg)"}: null} onClick={() => page !== 0 ? setPage(p => p - 1) : null}>
                 Prev
         </div>
 
@@ -172,7 +173,7 @@ export default function Music() {
 
                 <div className="button"
                 style= {start + pageSize >= data.length ? {color: "var(--bg)"}: null}
-                onClick={() => setPage(p => p + 1)}
+                onClick={() => start + pageSize < data.length ? setPage(p => p + 1): null}
                 >
                 Next
                 </div>
