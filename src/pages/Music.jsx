@@ -41,8 +41,9 @@ export default function Music() {
         data.reduce((acc, row) => {
             const date = parseDate(row.c[2]?.v);
             const year = date ? new Date(date).getFullYear() : null;
-
-            if (year) acc[year] = (acc[year] || 0) + 1;
+            if (year && !festival) {
+                acc[year] = (acc[year] || 0) + 1;
+            }
             return acc;
         }, {})
         )
@@ -72,7 +73,7 @@ export default function Music() {
             const festival = row.c[6]?.v;
 
             if (venue && !festival) {
-            acc[venue] = (acc[venue] || 0) + 1;
+                acc[venue] = (acc[venue] || 0) + 1;
             }
 
             return acc;
@@ -99,7 +100,7 @@ export default function Music() {
     return (
     <>
        
-        <h3>Number of concerts over time (2016-present)</h3>
+        <h3>Number of concerts over time (2016-present, excluding festivals)</h3>
         <LineChart width={600} height={300} data={eventsOverTime}>
             <XAxis dataKey="year" />
             <YAxis allowDecimals={false} />
