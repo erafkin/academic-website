@@ -9,6 +9,8 @@ export default function Music() {
     const url = `https://docs.google.com/spreadsheets/d/1E2q73AtI9Ju3seLqDp06wFH5DngWC6RP1bebQzInduk/gviz/tq?tqx=out:json`;
     const [data, setData] = useState()
     const [page, setPage] = useState(0);
+    const [chartMode, setChartMode] = useState("venue");
+
 
     useEffect(() => {
         const poll = async () => {
@@ -27,7 +29,6 @@ export default function Music() {
             ? new Date(+m[1], +m[2], +m[3]).toLocaleDateString()
             : value;
     };
-    console.log(data)
     if (!data) {
         return <div>Loading...</div>
     }
@@ -64,7 +65,6 @@ export default function Music() {
         }, {})
         )
         .sort((a, b) => b[1] - a[1])
-        // .slice(0, 10)
         .map(([band, count]) => (count > 1 ? { band, count } : null));
     const venueCounts = Object.entries(
         data.reduce((acc, row) => {
@@ -79,13 +79,27 @@ export default function Music() {
         }, {})
         )
         .sort((a, b) => b[1] - a[1])
-        .slice(0, 10)
-        .map(([venue, count]) => ({ venue, count }));
+        .map(([venue, count]) => ((count > 1 ? { venue, count } : null)));
+    const cityCounts = Object.entries(
+        data.reduce((acc, row) => {
+            const value = row.c[4]?.v?.trim(); // column 5
+            const festival = row.c[6]?.v;
+
+            if (value && !festival) {
+                acc[value] = (acc[value] || 0) + 1;
+            }
+            return acc;
+        }, {})
+    )
+    .sort((a, b) => b[1] - a[1])
+    .map(([city, count]) => ({ city, count }));
+    
+    const chartData = chartMode === "venue" ? venueCounts : cityCounts;
 
     return (
     <>
        
-        <h3>Number of concerts over time</h3>
+        <h3>Number of concerts over time (2019-present)</h3>
         <LineChart width={600} height={300} data={eventsOverTime}>
             <XAxis dataKey="year" />
             <YAxis allowDecimals={false} />
@@ -96,18 +110,28 @@ export default function Music() {
         
         
          <h3>Bands seen multiple times (including openers)</h3>
-        <BarChart width={600} height={400} data={bandCounts} layout="vertical">
+        <BarChart width={600} height={500} data={bandCounts} layout="vertical">
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis type="number" allowDecimals={false} />
         <YAxis dataKey="band" type="category" width={150}/>
         <Tooltip />
         <Bar dataKey="count" fill="#82ca9d" />
         </BarChart>
-        <h3>Top Venues</h3>
-        <BarChart width={600} height={400} data={venueCounts} layout="vertical">
+        <h3>Top {chartMode === "venue" ? "Venues" : "Cities"}</h3>
+        <div className="projectSelectionBox">
+                <div className="projectSelection" style={chartMode === "venue" ? {textDecoration: "underline"} : {}} onClick={()=>setChartMode("venue")}>Venues</div>
+                <div className="projectSelection" style={chartMode === "city" ? {textDecoration: "underline"} : {}} onClick={()=>setChartMode("city")}>Cities</div>
+            </div>
+
+
+        <BarChart width={600} height={450} data={chartData} layout="vertical">
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis type="number" allowDecimals={false} />
-            <YAxis type="category" dataKey="venue" width={150} />
+            <YAxis
+                type="category"
+                dataKey={chartMode === "venue" ? "venue" : "city"}
+                width={150}
+            />
             <Tooltip />
             <Bar dataKey="count" fill="#82ca9d" />
         </BarChart>
