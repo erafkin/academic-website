@@ -57,7 +57,7 @@ export default function Music() {
             .filter(Boolean) || [];
 
             if (band) acc[band] = (acc[band] || 0) + 1;
-            openers.forEach(opener => {
+                openers.forEach(opener => {
             acc[opener] = (acc[opener] || 0) + 1;
             });
 
@@ -99,7 +99,7 @@ export default function Music() {
     return (
     <>
        
-        <h3>Number of concerts over time (2019-present)</h3>
+        <h3>Number of concerts over time (2016-present)</h3>
         <LineChart width={600} height={300} data={eventsOverTime}>
             <XAxis dataKey="year" />
             <YAxis allowDecimals={false} />
@@ -124,7 +124,7 @@ export default function Music() {
             </div>
 
 
-        <BarChart width={600} height={450} data={chartData} layout="vertical">
+        <BarChart width={600} height={600} data={chartData} layout="vertical">
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis type="number" allowDecimals={false} />
             <YAxis
@@ -136,7 +136,7 @@ export default function Music() {
             <Bar dataKey="count" fill="#82ca9d" />
         </BarChart>
 
-        <h3>All data (Present-2019)</h3>
+        <h3>All data (Present-2016)</h3>
         <table className="standings">
             <thead>
                 <tr>
