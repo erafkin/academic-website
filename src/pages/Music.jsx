@@ -41,6 +41,7 @@ export default function Music() {
         data.reduce((acc, row) => {
             const date = parseDate(row.c[2]?.v);
             const year = date ? new Date(date).getFullYear() : null;
+            const festival = row.c[6]?.v;
             if (year && !festival) {
                 acc[year] = (acc[year] || 0) + 1;
             }
