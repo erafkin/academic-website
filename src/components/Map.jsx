@@ -7,7 +7,7 @@ const places = [
   { name: "Tibbet Knob, WV", pos: [38.9145541,-78.7156163], note: "I got engaged here!",  src: "/hikes/tibbet_knob.jpeg"},
   { name: "Big Schloss, VA", pos: [38.9406646,-78.6761701], note: "engagement party", src: "/hikes/big_schloss.jpeg" },
   { name: "Annapolis Rock, MD", pos: [39.2817717,-77.1316477], note: "great quick hike", src: "/hikes/annapolis_rock.jpeg" },
-  {name: "Old Tag, VA", pos: [38.5517329,-78.3261049], note: "it's famous for a reason!", src: "/hikes/old_rag.jpeg"},
+  {name: "Old Rag, VA", pos: [38.5517329,-78.3261049], note: "it's famous for a reason!", src: "/hikes/old_rag.jpeg"},
   { name: "Mount Moosilauke, NH", pos: [44.0245099,-71.8412385], note: "7/4/2019 it was pink", src: "/hikes/moosilauke.jpeg"},
   { name: "Mount Cardigan, NH", pos: [43.6497939,-71.925126], note: "great bald face", src: "/hikes/cardigan.jpeg"},
     { name: "Mount Major, NH", pos: [43.5117443,-71.2976125], note: "", src: "/hikes/major.jpeg"},
