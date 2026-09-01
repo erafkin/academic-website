@@ -39,8 +39,8 @@ export default function Projects() {
     <article>
       <h1>Selected Projects</h1>
       <div className="projectSelectionBox">
-        <div className="projectSelection" style={selected === "work" ? {textDecoration: "underline"} : {}} onClick={()=>setSelected("work")}>WORK</div>
-        <div className="projectSelection" style={selected === "school" ? {textDecoration: "underline"} : {}} onClick={()=>setSelected("school")}>SCHOOL</div>
+        <div className="projectSelection" style={selected === "work" ? {textDecoration: "underline"} : {}} onClick={()=>setSelected("work")}>Work</div>
+        <div className="projectSelection" style={selected === "school" ? {textDecoration: "underline"} : {}} onClick={()=>setSelected("school")}>School</div>
       </div>
       { selected == "work" ? 
         <div className="projectNote">

@@ -76,13 +76,15 @@ export const projects = [
     title: "Efficient Communication in Internet Slang",
     category: "school",
     blurb:
-      "Testing Zipf's law and surprisal on abbreviations vs. their full-length counterparts in a corpus of 3M tweets: compression rate correlates with the difference in surprisal between word forms.",
+      "Testing information theory via surprisal on abbreviations vs. their full-length counterparts in a corpus of 3M tweets: compression rate correlates with the difference in surprisal between word forms.",
     links: [
       {
         label: "GitHub",
         href: "https://github.com/erafkin/twitter_abbreviation_word_length/",
       },
     ],
+      tags: ["information theory", "fine-tuning"]
+
   },
   {
     title: "Curriculum Learning for BabyLM Challenge",
