@@ -1,10 +1,18 @@
 import { projects } from "../data/projects.js";
 import { useState } from "react";
 
-function ProjectList({ items }) {
+function ProjectList({ items, selectedTags, setSelectedTags }) {
+  var filteredItems = items
+  if (selectedTags.length > 0){
+    filteredItems = items.filter(item =>
+      selectedTags.every(tag =>
+        item.tags.includes(tag) || item.location === tag
+      )
+    );
+  }
   return (
     <ul className="item-list">
-      {items.map((project) => (
+      {filteredItems.map((project) => (
         <li key={project.title}>
           <h3>{project.title}</h3>
           <p>{project.blurb}</p>
@@ -18,10 +26,20 @@ function ProjectList({ items }) {
               ))}
             </p>
           )}
-          <div>
+          <div>  
             {project.tags?.length > 0 && (
             <div className="tagBox">
-              {project.tags.map((tag, index) => <span className="tags">{tag}</span>)}
+              <p
+              className="projectLocation" 
+              style={{"backgroundColor": project.location_background}}
+              onClick={() => {
+                const newSelectedTags = selectedTags.includes(project.location) ? selectedTags.filter(item => item !== project.location) : [...selectedTags, project.location]
+                setSelectedTags(newSelectedTags)}}
+              >
+                {project.location}</p>
+              {project.tags.map((tag, _) => <span className="tags" onClick={() => {
+                const newSelectedTags = selectedTags.includes(tag) ? selectedTags.filter(item => item !== tag) : [...selectedTags, tag]
+                setSelectedTags(newSelectedTags)}}>{tag}</span>)}
             </div>
           )}
           </div>
@@ -32,27 +50,31 @@ function ProjectList({ items }) {
 }
 
 export default function Projects() {
-  const work = projects.filter((project) => project.category === "work");
-  const school = projects.filter((project) => project.category === "school");
-  const [selected, setSelected] = useState("work");
+  const [selectedTags, setSelectedTags] = useState([]);
+
   return (
     <article>
       <h1>Selected Projects</h1>
-      <div className="projectSelectionBox">
-        <div className="projectSelection" style={selected === "work" ? {textDecoration: "underline"} : {}} onClick={()=>setSelected("work")}>Work</div>
-        <div className="projectSelection" style={selected === "school" ? {textDecoration: "underline"} : {}} onClick={()=>setSelected("school")}>School</div>
+      <div className="projectNote">
+          Project markings: AE Studio projects were done while I was working for AIAF or AE Studio. APL projects were internally funded research projects at JHU/APL where I was the principal investigator. Georgetown projects were term projects. 
+        </div>
+        <div className="projectNote">
+          Green tags are project keywords.
+        </div>
+      <div>
+        Selected filters: 
+        {
+          selectedTags.length === 0  ? " None" :
+            <span>
+              {selectedTags.map((tag) => 
+                  <span  className="tagSelection" onClick={() => setSelectedTags(selectedTags.filter(item => item !==tag))}>{tag}</span>
+              )}
+            <span className="tagSelection" onClick={() => setSelectedTags([])}>clear</span>
+            </span>
+      }  
       </div>
-      { selected == "work" ? 
-        <div className="projectNote">
-          All of these were internally funded research projects at JHU/APL in which I was the principal investigator.
-        </div>
-        :
-        <div className="projectNote">
-          Selected research and/or class final projects from my M.S. in Computational Linguistics.
-        </div>
-        }
-
-      <ProjectList items={selected === "work" ? work : school} />
+        
+      <ProjectList items={projects} selectedTags={selectedTags} setSelectedTags={setSelectedTags}/>
     </article>
   );
 }

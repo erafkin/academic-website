@@ -9,7 +9,7 @@ export default function Music() {
     const url = `https://docs.google.com/spreadsheets/d/1E2q73AtI9Ju3seLqDp06wFH5DngWC6RP1bebQzInduk/gviz/tq?tqx=out:json`;
     const [data, setData] = useState()
     const [page, setPage] = useState(0);
-    const [chartMode, setChartMode] = useState("venue");
+    const [chartMode, setChartMode] = useState("city");
 
 
     useEffect(() => {
@@ -121,8 +121,8 @@ export default function Music() {
         </BarChart>
         <h3>Top {chartMode === "venue" ? "Venues" : "Cities"}</h3>
         <div className="projectSelectionBox">
-                <div className="projectSelection" style={chartMode === "venue" ? {textDecoration: "underline"} : {}} onClick={()=>setChartMode("venue")}>Venues</div>
                 <div className="projectSelection" style={chartMode === "city" ? {textDecoration: "underline"} : {}} onClick={()=>setChartMode("city")}>Cities</div>
+                <div className="projectSelection" style={chartMode === "venue" ? {textDecoration: "underline"} : {}} onClick={()=>setChartMode("venue")}>Venues</div>
             </div>
 
 

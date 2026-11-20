@@ -13,8 +13,8 @@ export default function About() {
         <h1>{site.name}</h1>
         <p className="subtitle">{site.title}</p>
           <p>
-            I am an NLP Research Scientist / Software Engineer with experience in applied AI and a focus in knowledge representation within LLMs. 
-            I recently graduated with my <a href='https://gucl.georgetown.edu/' target='_blank' rel='noopener noreferrer'>Master's in Computational Linguistics from Georgetown University</a> and have 5 years of research experience as a U.S. government contractor for a <a href='https://www.jhuapl.edu/' target='_blank' rel='noopener noreferrer'>UARC</a>. 
+            I am an NLP Research Scientist/Engineer with experience in applied AI and a focus in knowledge representation in LLMs. I am currently an AI Alignment Scientist/Engineer at <a href='https://ae.studio/' target='_blank' rel='noopener noreferrer'>AE Studio</a>. 
+            I recently graduated with my <a href='https://gucl.georgetown.edu/' target='_blank' rel='noopener noreferrer'>M.S. in Computational Linguistics</a> and have 5 years of research experience as a U.S. government contractor for a <a href='https://www.jhuapl.edu/' target='_blank' rel='noopener noreferrer'>UARC</a>. 
             I am interested in making safer LLMs and expanding language technologies to speakers of all languages.
           </p>
           <p>

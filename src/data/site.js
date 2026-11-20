@@ -12,5 +12,9 @@ export const site = {
       label: "Google Scholar",
       href: "https://scholar.google.com/citations?user=4RF5my0AAAAJ",
     },
+    {
+      label: "LessWrong",
+      href: "https://www.lesswrong.com/users/emma-rafkin"
+    }
   ],
 };
